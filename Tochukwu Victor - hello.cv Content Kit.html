@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tochukwu Victor — hello.cv Content Kit</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --panel:#f5f7f6;
+    --ink:#1e2a33;
+    --navy:#1b3a5c;
+    --brass:#a9793c;
+    --line:#dce3e7;
+    --muted:#647079;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 96px;}
+
+  /* ---- intro ---- */
+  .kit-header h1{
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:30px;
+    margin:0 0 6px;
+    color:var(--navy);
+  }
+  .kit-header p{color:var(--muted);margin:0 0 18px;font-size:15px;max-width:60ch;}
+  .howto{
+    background:var(--panel);
+    border-left:3px solid var(--brass);
+    padding:16px 18px;
+    font-size:14px;
+    color:var(--ink);
+    margin-bottom:44px;
+  }
+  .howto strong{color:var(--navy);}
+
+  /* ---- section blocks ---- */
+  .block{margin-bottom:14px;}
+  .block-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:8px;
+    margin-bottom:14px;
+  }
+  .block-head .tag{
+    font-size:12px;
+    color:var(--brass);
+    font-weight:600;
+    letter-spacing:.02em;
+  }
+  .block-head .tag::before{content:"→ paste into ";color:var(--muted);font-weight:400;}
+  .copy-btn{
+    border:1px solid var(--navy);
+    background:transparent;
+    color:var(--navy);
+    font-size:13px;
+    font-weight:600;
+    padding:6px 14px;
+    border-radius:3px;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:background .15s ease, color .15s ease;
+  }
+  .copy-btn:hover{background:var(--navy);color:#fff;}
+  .copy-btn.copied{background:var(--brass);border-color:var(--brass);color:#fff;}
+
+  .field-group{margin-bottom:56px;}
+  .field-group > .field-title{
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:22px;
+    color:var(--navy);
+    margin:0 0 18px;
+  }
+
+  .content{
+    padding:2px 2px 4px;
+    font-size:15px;
+  }
+  .content p{margin:0 0 12px;}
+  .content ul{margin:0 0 12px;padding-left:22px;}
+  .content li{margin-bottom:6px;}
+  .content h3{
+    font-size:15px;
+    margin:0 0 2px;
+    color:var(--ink);
+  }
+  .content .meta{
+    color:var(--muted);
+    font-style:italic;
+    font-size:13.5px;
+    margin:0 0 8px;
+  }
+  .content strong{color:var(--ink);}
+
+  .entry + .entry{margin-top:26px;padding-top:22px;border-top:1px dashed var(--line);}
+
+  footer{margin-top:60px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:18px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kit-header">
+    <h1>hello.cv Content Kit</h1>
+    <p>Same wording as your LinkedIn profile, split into hello.cv's own section structure. Use the button on each block to copy it with formatting intact (bold, bullets), then paste into the matching field on hello.cv.</p>
+  </div>
+
+  <div class="howto">
+    <strong>How to use this:</strong> Click "Copy" on a block below, then click into the matching field on hello.cv and paste (Ctrl/Cmd+V). Do this block‑by‑block — don't select the whole page at once, since hello.cv's fields are separate. hello.cv applies its own template styling (colors, fonts, layout) on top of whatever you paste, so only the text, bold labels, and bullet structure carry over — that's expected.
+  </div>
+
+  <!-- ============ BASICS ============ -->
+  <div class="field-group">
+    <p class="field-title">Basics</p>
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Name / Headline / Location</span>
+        <button class="copy-btn" data-target="basics">Copy</button>
+      </div>
+      <div class="content" id="basics">
+        <p><strong>Tochukwu Victor</strong></p>
+        <p>Physics &amp; STEM Educator | EdTech Builder | Programme &amp; Operations Leadership | Tech &amp; Research Driven-Problem Solver</p>
+        <p>BSc Physics and Astronomy, University of Nigeria, Nsukka — Lagos, Nigeria</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <div class="field-group">
+    <p class="field-title">About</p>
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">About</span>
+        <button class="copy-btn" data-target="about">Copy</button>
+      </div>
+      <div class="content" id="about">
+        <p>My career is driven by a simple philosophy: if a tool or resource doesn't exist to make learning clearer, build it. Armed with a background in Physics and Astronomy from the University of Nigeria, I have dedicated my path to making intricate scientific theories accessible and engaging through both expert teaching and innovative mobile app creation.</p>
+        <p>Whether I am in the classroom preparing students for SSCE and Cambridge GCE examinations, authoring open-access practical physics manuals, or developing mobile learning applications in Flutter and Dart, my focus remains on practical execution and user impact. Leadership has also been a core pillar of my journey; stepping up to lead a community development group taught me how to navigate stakeholder engagement, manage organizational budgets, and partner with government agencies to resolve critical infrastructure barriers. I thrive at the intersection of technology, education, and strategic operations.</p>
+        <p><strong>Curriculum Delivery:</strong> Specialized in teaching senior secondary and university-level Physics and STEM subjects with a strong emphasis on hands-on laboratory work and exam strategy. Comfortable with both NERDC curriculum and British curriculum.</p>
+        <p><strong>App Development:</strong> Built functional digital companions featuring virtual lab activities, automated testing environments, and AI-assisted study tools.</p>
+        <p><strong>Community Leadership:</strong> Directed multi-stakeholder initiatives, established official documentation structures, and earned certificates of meritorious service.</p>
+        <p><strong>Scientific Inquiry:</strong> Analyzed large astrophysical datasets comparing BL Lac objects and FSRQs using advanced quantitative techniques.</p>
+        <p>I welcome connections from colleagues, leaders, and recruiters interested in collaborating on STEM education, educational technology, or institutional leadership.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <div class="field-group">
+    <p class="field-title">Experience</p>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Experience entry 1</span>
+        <button class="copy-btn" data-target="exp1">Copy</button>
+      </div>
+      <div class="content" id="exp1">
+        <h3>STEM Teacher</h3>
+        <p class="meta">Creative Field International School — Okpanam, Asaba · July 2026 – Present</p>
+        <ul>
+          <li>Teach Physics and Chemistry across SS1–SS3, with Mathematics also taught during summer lessons.</li>
+          <li>Plan and deliver curriculum-aligned lessons, developing lesson notes, instructional materials, assessments and revision activities.</li>
+          <li>Conduct practical Physics and laboratory-based learning activities.</li>
+          <li>Set, administer and mark assessments and examinations while maintaining student score records and monitoring academic performance.</li>
+          <li>Prepare students for WAEC, NECO and JAMB-style examinations through structured, past-question-focused practice.</li>
+          <li>Integrate self-developed educational applications and digital learning tools into teaching and revision activities.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Experience entry 2</span>
+        <button class="copy-btn" data-target="exp2">Copy</button>
+      </div>
+      <div class="content" id="exp2">
+        <h3>President / Treasurer &amp; Financial Secretary</h3>
+        <p class="meta">Environmental Protection &amp; Sanitation CDS Group — NYSC · November 2025 – July 2026</p>
+        <ul>
+          <li>Took over responsibility for group finances as Treasurer/Financial Secretary and was elected President six months later.</li>
+          <li>Led the transition from financial management into overall organizational leadership during the same service year.</li>
+          <li>Drafted the group's constitution and established its official letterhead and documentation structure.</li>
+          <li>Worked with the NYSC Local Government Inspector and Local Government Chairman's office to escalate and address community sanitation and road-flooding problems affecting access to two schools, a market and a police station.</li>
+          <li>Developed mobile tools for official document and certificate generation, reducing manual paperwork for the group.</li>
+          <li>Completed the service year with certificates of meritorious service recognizing both the finance and leadership roles.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Experience entry 3</span>
+        <button class="copy-btn" data-target="exp3">Copy</button>
+      </div>
+      <div class="content" id="exp3">
+        <h3>Physics &amp; Chemistry Teacher — NYSC</h3>
+        <p class="meta">Jesus Root Knowledge School — Issele-Uku, Delta State · September 2025 – June 2026</p>
+        <ul>
+          <li>Taught Senior Secondary Physics and Chemistry, including practical lessons and laboratory instruction.</li>
+          <li>Trained students in SSCE-standard Physics practical reporting.</li>
+          <li>Planned lessons and classroom activities aligned with examination requirements.</li>
+          <li>Administered examinations, marked scripts, maintained student score sheets and monitored performance.</li>
+          <li>Used WAEC past questions and structured revision activities to strengthen examination preparation.</li>
+          <li>Served as a special adviser to school management, contributing to academic planning and student support.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PROJECTS ============ -->
+  <div class="field-group">
+    <p class="field-title">Projects</p>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Project entry 1</span>
+        <button class="copy-btn" data-target="proj1">Copy</button>
+      </div>
+      <div class="content" id="proj1">
+        <h3>Practical Physics Lab</h3>
+        <p class="meta">Flutter / Dart</p>
+        <p>Independently developed a mobile application for practical Physics learning featuring virtual laboratory activities, instrument training, data tables and graphs, built-in AI personal practical assistant, a Physics glossary, scientific calculator and exam-style past-question practice.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Project entry 2</span>
+        <button class="copy-btn" data-target="proj2">Copy</button>
+      </div>
+      <div class="content" id="proj2">
+        <h3>JAMB CBT Exam App</h3>
+        <p class="meta">Flutter / Dart</p>
+        <p>Independently developed a timed computer-based-test practice application designed to simulate the JAMB/UTME testing experience and help students develop speed, accuracy and confidence. Question bank spanning 20 years, Built-in scoring, corrections and study encouragement system.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Project entry 3</span>
+        <button class="copy-btn" data-target="proj3">Copy</button>
+      </div>
+      <div class="content" id="proj3">
+        <h3>PGD Physics</h3>
+        <p class="meta">Flutter / Dart</p>
+        <p>Independently developed a study companion covering all twelve courses of the Postgraduate Diploma in Physics with Electronics programme at Afe Babalola University, Ado-Ekiti (ABUAD), with a built-in AI study assistant and study-focused interface.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Project entry 4</span>
+        <button class="copy-btn" data-target="proj4">Copy</button>
+      </div>
+      <div class="content" id="proj4">
+        <h3>Practical Physics Manuals</h3>
+        <p>Authored an SSCE-standard Senior Secondary Physics practical manual covering experiment theory, diagrams, data tables and precautions. As well as Cambridge GCE O/A level-standard version. Published it online as a free PDF resource.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Project entry 5</span>
+        <button class="copy-btn" data-target="proj5">Copy</button>
+      </div>
+      <div class="content" id="proj5">
+        <h3>NoteSpace</h3>
+        <p>Authored a Physics and STEM lesson-note series covering the Senior Secondary curriculum and published the resources as free downloadable PDFs.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Project entry 6</span>
+        <button class="copy-btn" data-target="proj6">Copy</button>
+      </div>
+      <div class="content" id="proj6">
+        <h3>Undergraduate Research — Blazar Sample Comparison</h3>
+        <p class="meta">Comparison of Blazar Samples in the Second-Fermi-LAT Catalogue</p>
+        <p>Compared 395 BL Lac objects and 310 FSRQs from the 2FGL/2LAC Clean Sample using photon spectral index, redshift and gamma-ray flux.</p>
+        <p>Distribution analysis and simple linear regression produced a strong correlation in the combined sample (r = 0.86), which weakened when the populations were examined separately.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ EDUCATION ============ -->
+  <div class="field-group">
+    <p class="field-title">Education</p>
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Education</span>
+        <button class="copy-btn" data-target="edu">Copy</button>
+      </div>
+      <div class="content" id="edu">
+        <h3>Bachelor of Science (BSc), Physics and Astronomy</h3>
+        <p class="meta">University of Nigeria, Nsukka · 2018 – 2023</p>
+        <p><strong>Final-year research:</strong> Comparison of Blazar Samples in the Second-Fermi-LAT Catalogue</p>
+        <p>Areas of focus included theoretical and experimental physics, astrophysics, mathematical physics, laboratory science and quantitative data analysis.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SKILLS ============ -->
+  <div class="field-group">
+    <p class="field-title">Skills</p>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Skills — Leadership &amp; Operations</span>
+        <button class="copy-btn" data-target="sk1">Copy</button>
+      </div>
+      <div class="content" id="sk1">
+        <p>Team Leadership • Programme Coordination • Project Coordination • Financial &amp; Resource Management • Stakeholder Engagement • Government Liaison • Constitution &amp; Policy Drafting • Community Development • Adaptability</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Skills — Teaching &amp; Curriculum</span>
+        <button class="copy-btn" data-target="sk2">Copy</button>
+      </div>
+      <div class="content" id="sk2">
+        <p>Physics • Chemistry • Mathematics • Practical/Laboratory Instruction • Lesson Planning • Curriculum Development • WAEC Preparation • NECO Preparation • JAMB Preparation • Cambridge GCE O/A-Level • NERDC Curriculum • British Curriculum • Student Mentoring • Assessment &amp; Performance Tracking</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Skills — Scientific &amp; Analytical</span>
+        <button class="copy-btn" data-target="sk3">Copy</button>
+      </div>
+      <div class="content" id="sk3">
+        <p>Scientific Research • Data Interpretation • Statistical Analysis • Astronomy • Astrophysics • Analytical Thinking • Problem-Solving • Scientific Communication</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Skills — Technology &amp; EdTech</span>
+        <button class="copy-btn" data-target="sk4">Copy</button>
+      </div>
+      <div class="content" id="sk4">
+        <p>Flutter • Dart • Mobile Application Development • Educational Technology • Digital Learning Tools • AI-Assisted App Features • Educational Publishing • PDF Resource Development</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ OPEN TO WORK ============ -->
+  <div class="field-group">
+    <p class="field-title">Open to Work</p>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Open to work — Roles of interest</span>
+        <button class="copy-btn" data-target="otw1">Copy</button>
+      </div>
+      <div class="content" id="otw1">
+        <ul>
+          <li>Programme &amp; Operations</li>
+          <li>Graduate &amp; Management Trainee Programmes</li>
+          <li>STEM / Physics Education</li>
+          <li>Educational Technology</li>
+          <li>EdTech Product &amp; Learning Technology</li>
+          <li>Programme Coordination</li>
+          <li>Community &amp; Stakeholder Engagement</li>
+          <li>Academic / STEM Leadership</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Open to work — Location</span>
+        <button class="copy-btn" data-target="otw2">Copy</button>
+      </div>
+      <div class="content" id="otw2">
+        <p>Lagos, Nigeria preferred; open to relocation within Nigeria.</p>
+        <p>Also open to international opportunities, including UK, US, Canada, UAE, Qatar and other international/British-curriculum education markets.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Open to work — Work preference</span>
+        <button class="copy-btn" data-target="otw3">Copy</button>
+      </div>
+      <div class="content" id="otw3">
+        <p>Open to full-time and contract opportunities, including remote and on-site roles.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ LANGUAGES ============ -->
+  <div class="field-group">
+    <p class="field-title">Languages</p>
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Languages</span>
+        <button class="copy-btn" data-target="lang">Copy</button>
+      </div>
+      <div class="content" id="lang">
+        <p>English — Fluent</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ REFERENCE ============ -->
+  <div class="field-group">
+    <p class="field-title">Reference</p>
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Reference</span>
+        <button class="copy-btn" data-target="ref">Copy</button>
+      </div>
+      <div class="content" id="ref">
+        <p>Available upon request</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CONTACT ============ -->
+  <div class="field-group">
+    <p class="field-title">Contact</p>
+    <div class="block">
+      <div class="block-head">
+        <span class="tag">Contact / Links</span>
+        <button class="copy-btn" data-target="contact">Copy</button>
+      </div>
+      <div class="content" id="contact">
+        <p><strong>Email:</strong> victor.tochukwu.unn@gmail.com</p>
+        <p><strong>Phone:</strong> +234 903 978 7159</p>
+        <p><strong>WhatsApp:</strong> @iam_tochi</p>
+        <p><strong>Location:</strong> Lagos, Nigeria</p>
+        <p><strong>Portfolio / GitHub:</strong> Add public portfolio link</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>Content kit for hello.cv — generated from Tochukwu Victor's LinkedIn profile wording.</footer>
+</div>
+
+<script>
+  document.querySelectorAll('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = document.getElementById(btn.getAttribute('data-target'));
+      var range = document.createRange();
+      range.selectNodeContents(target);
+      var selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch(e) { ok = false; }
+      selection.removeAllRanges();
+
+      if(!ok && navigator.clipboard && navigator.clipboard.write){
+        try{
+          var item = new ClipboardItem({
+            'text/html': new Blob([target.innerHTML], {type:'text/html'}),
+            'text/plain': new Blob([target.innerText], {type:'text/plain'})
+          });
+          navigator.clipboard.write([item]);
+          ok = true;
+        }catch(e){ ok = false; }
+      }
+
+      var original = btn.textContent;
+      btn.textContent = ok ? 'Copied' : 'Select & Ctrl+C';
+      btn.classList.add('copied');
+      setTimeout(function(){
+        btn.textContent = original;
+        btn.classList.remove('copied');
+      }, 1600);
+    });
+  });
+</script>
+</body>
+</html>
